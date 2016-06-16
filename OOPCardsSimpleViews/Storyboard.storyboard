@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5Nb-VI-X55">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5Nb-VI-X55">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--Card Switcher View Controller-->
@@ -16,13 +16,76 @@
                     <view key="view" contentMode="scaleToFill" id="RVc-yB-jf9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="!N" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cM-5O-GjN">
+                                <rect key="frame" x="254" y="560" width="101" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="bottomLabel"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="!N" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8q-ye-YCM">
+                                <rect key="frame" x="20" y="28" width="135" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="topLabel"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZe-VZ-zRk">
+                                <rect key="frame" x="20" y="629" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="threeOfSpadesButton"/>
+                                <state key="normal" title="♠️3"/>
+                                <connections>
+                                    <action selector="threeOfSpades:" destination="5Nb-VI-X55" eventType="touchUpInside" id="WEl-kh-rPo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ml5-yB-17S">
+                                <rect key="frame" x="125" y="629" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="fourOfClubsButton"/>
+                                <state key="normal" title="♣️4"/>
+                                <connections>
+                                    <action selector="fourOfClubs:" destination="5Nb-VI-X55" eventType="touchUpInside" id="vnE-0f-H3J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqk-XD-MZG">
+                                <rect key="frame" x="221" y="629" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="eightOfDiamondsButton"/>
+                                <state key="normal" title="♦️8"/>
+                                <connections>
+                                    <action selector="eightOfDiamonds:" destination="5Nb-VI-X55" eventType="touchUpInside" id="USe-3P-k9h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mJ-K6-er0">
+                                <rect key="frame" x="309" y="629" width="41" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="tenOfHeartsButton"/>
+                                <state key="normal" title="♥️10"/>
+                                <connections>
+                                    <action selector="tenOfHearts:" destination="5Nb-VI-X55" eventType="touchUpInside" id="RKK-Xh-Fpn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="!N" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBF-ia-mGJ">
+                                <rect key="frame" x="129" y="293" width="116" height="81"/>
+                                <accessibility key="accessibilityConfiguration" label="middleLabel"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bottomLabel" destination="2cM-5O-GjN" id="z0o-E3-eap"/>
+                        <outlet property="middleLabel" destination="kBF-ia-mGJ" id="itY-hm-qZO"/>
+                        <outlet property="topLabel" destination="d8q-ye-YCM" id="MPp-j6-yQf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kua-Xw-qOx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="242.8125" y="35.387323943661968"/>
+            <point key="canvasLocation" x="102.5" y="-1.5"/>
         </scene>
     </scenes>
 </document>
